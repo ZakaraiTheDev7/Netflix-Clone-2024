@@ -1,9 +1,10 @@
 import React from 'react'
+import Home from './Pages/Home/Home'
 
 function App() {
   return (
   <> 
-  <h1> Hello there ! 😍 I am ZKUP</h1>
+<Home/>
   </>
   )
 }
