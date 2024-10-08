@@ -47,3 +47,59 @@ By using the genre IDs, you can customize the request URLs for other genres as w
 
 
  API_KEY= 30e1ffb55eea8ed15b35b6f4a174b941"
+
+
+
+
+
+
+
+
+
+
+ sample of bannner Example******************
+ import React, { useState, useEffect } from 'react';
+import axois from "../../utils/axios"
+import requiests from "../../utils/requests"
+
+function Banner() {
+    const [movie,setMovie] = useState({})
+    useEffect(()=>{
+        // (asyc () =>{
+        //     try{
+        //         const request= await axois.get(requiests.actionMovies)
+        //         console.log(request)
+        //         setMovie(request.data.results[
+        //             Math.floor(Math.random() * request.data.results.length)
+        //         ]);
+            }
+        //     catch (error){
+        //         console.log("error",error)
+        //     }
+        // }) ()
+    // },[])
+
+  return (
+    <div
+     className="banner"  style={{
+        backgroundsize="cover",
+        backgroundImage: `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')`,
+        backgroundRepeat: "no-repeat"
+    }} 
+    >
+        <div className="banner_contents">
+            <h1 className="banner-title"></h1>
+            {movie.title || movie.name || movie.original_name}
+            <div className="banner-button">
+                <button className="banner-button play"> play</button>
+                <button className="banner-button "> My list</button>
+            </div>
+            {/* <h1 className="banner-description">{truncate(movie?.overview,150)}</h1> */}
+        </div>
+        <div className="banner-fadeBotton"></div>
+       
+    </div>
+  )
+}
+
+export default Banner
