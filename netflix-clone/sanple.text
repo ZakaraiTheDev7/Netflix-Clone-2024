@@ -47,8 +47,19 @@ By using the genre IDs, you can customize the request URLs for other genres as w
 
 
  API_KEY= 30e1ffb55eea8ed15b35b6f4a174b941"
+ *******************
+ my Pre APi =API_KEY
 
 
+###########VITE_API
+const VITE_API_KEy = import.meta.env.VITE_API_KEY;
+ const requests ={
+    //  fetchNetflixOriginals : `/discover/tv?api_key=${API_KEY}&with_networks=213`,
+
+    actionMovies: `/discover/movie?api_key=${VITE_API_KEY}&with_genres=28`,
+    comedyMovies: `/discover/movie?api_key=${AVITE_API_KEY}&with_genres=35`,
+    tvShows: `/discover/tv?api_key=${VITE_API_KEY}`,
+    actionTvShows: `/discover/tv?api_key=${VITE_API_KEY}&with_genres=10759`
 
 
 
@@ -103,3 +114,14 @@ function Banner() {
 }
 
 export default Banner
+
+******************
+const VITE_API_KEY = import.meta.env.VITE_API_KEY;
+
+const requests = {
+  actionMovies: `/discover/movie?api_key=${VITE_API_KEY}&with_genres=28`,
+  comedyMovies: `/discover/movie?api_key=${VITE_API_KEY}&with_genres=35`,
+  tvShows: `/discover/tv?api_key=${VITE_API_KEY}`,
+  actionTvShows: `/discover/tv?api_key=${VITE_API_KEY}&with_genres=10759`,
+};
+
