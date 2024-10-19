@@ -34,7 +34,7 @@ function Banner() {
 
   // Generate the movie backdrop URL or fallback to a placeholder
   const movieBackdrop = movie?.backdrop_path 
-    ? `url('https://image.tmdb.org/t/p/original${movie.backdrop_path}')` 
+    ? `url('https://image.tmdb.org/t/p/original${movie?.backdrop_path}')` 
     : 'url(/path-to-your-placeholder-image.jpg)'; // Ensure this image exists in public folder
 
   return (
@@ -57,6 +57,7 @@ function Banner() {
         </div>
 
         {/* Uncomment or define the truncate function if needed */}
+        {/* truncate is function take string and  n times , the string bzete  */}
         <h1 className="banner-description">{truncate(movie?.overview, 150)}</h1>
       </div>
       <div className="banner-fadeBottom"></div>

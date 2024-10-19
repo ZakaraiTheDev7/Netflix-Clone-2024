@@ -33,6 +33,13 @@ function Footer() {
                 </div>
                 <div>
                     <ul>
+                        <li>Gift Cards</li>
+                        <li>Terms of Use</li>
+                        <li>Corporate Information</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
                         <li>Media Center</li>
                         <li> Privacy</li>
                         <li> Contact Us</li>

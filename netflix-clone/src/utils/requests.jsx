@@ -9,6 +9,10 @@ const requests = {
     fetchHorrorMovies: `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=27`,
     fetchRomanceMovies: `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=10749`,
     fetchDocumentaries: `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=99`,
+    fetchAnimations: `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=16`,
+    fetchDocumentaries: `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=99`,
+    // You can add more endpoints if needed
+    
   };
 
 export default requests;

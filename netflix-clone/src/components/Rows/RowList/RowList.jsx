@@ -34,12 +34,27 @@ function RowList() {
    isLargeRow={true}
    />
    
-   
-   
+   <Row
+   title="Romance Movies"
+   fectURL={requests.fetchRomanceMovies}
+   isLargeRow={true} 
+   />
+    <Row
+   title="Documentaries"
+   fectURL={requests.fetchDocumentaries}
+   isLargeRow={true} 
+   />
+    <Row
+   title="Animatioms"
+   fectURL={requests.fetchAnimations}
+   isLargeRow={true} 
+   />
+
+    
    </>
    
   )
-}
+ }
 
-export default RowList
+ export default RowList
 
